@@ -233,7 +233,7 @@ sbom: → The prefix tells Grype the input is an SBOM file, not a filesystem or 
 - Vulnerability analysis (top 5 CVEs or rationale for zero matches)
 - Reflection on insights and process  
 
-2. Upload to `/deliverables/` and push to GitHub:
+2. Upload to `/deliverables/` and push to GitHub (use all lowercase filenames as shown below to simplify grading):
 
 ```
 deliverables/
@@ -245,17 +245,13 @@ deliverables/
 ```
 **Canvas Submission**:
 
-1. Copy your forked repository URL:
-   - Go to your forked repo on GitHub (it should look something like:  
+1. Copy your forked repository URL: Go to your forked repo on GitHub (it should look something like:
+   
      `https://github.com/<your-username>/eng298-fa25-mod7-sbom-lab1`
+   
    - Copy the URL from your browser’s address bar.
 
-2. Submit the URL in Canvas:
-   - In the Canvas assignment submission box, paste the **full URL** to your forked repo.  
-   - Example:  
-     ```[
-     https://github.com/<your-username>/eng298-fa25-mod7-sbom-lab1
-     ```
+3. Submit the URL in Canvas
 
 ## **Grading Rubric (20 Points Total)**
 
