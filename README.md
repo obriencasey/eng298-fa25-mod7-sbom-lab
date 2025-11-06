@@ -9,7 +9,6 @@ In this lab, you will apply Security Engineering principles - open design, least
 
 You will use GitHub Codespaces and open-source tools to generate, analyze, and compare SBOMs for a software repository, then reflect on how this information supports secure design and lifecycle assurance.
 
----
 
 ## **Learning Objectives**
 
@@ -23,13 +22,9 @@ You will learn to generate, analyze, and interpret both artifacts. By the end of
 - Interpret and document CVE findings.
 - Identify potential risks or missing information in component inventories
 
----
-
 ## **Lab Context**
 
 In the Module 7 Reading Material and lecture discussions, you explored how assurance, verification, and transparency strengthen system design and maintenance. This lab extends those principles into the software supply chain, where complex dependencies make it difficult to know exactly what’s running in a system. By generating and analyzing SBOMs for the **NG911** application - software that aligns with the [NENA/NG911](https://www.nena.org/page/ng911_project) standards defining the architecture and interoperability framework for Next Generation 9-1-1 systems - you’ll apply the same engineering mindset of identifying components, validating integrity, and reducing uncertainty to software, reinforcing the role of visibility as a foundation for trust.
-
----
 
 ### **HBOM vs. SBOM Explained**
 
@@ -42,14 +37,10 @@ In the Module 7 Reading Material and lecture discussions, you explored how assur
 | **Key Users** | Developers, vulnerability managers, software assurance teams. | OEMs, supply-chain analysts, hardware security engineers. |
 | **Tagline** | *“What’s in the code.”* | *“What’s on the board.”* |
 
----
-
 ## **Resources**
 
 - [Idaho National Lab (INL) SBOM Portal](https://sbom.inl.gov)  
 - [National Vulnerability Database (NVD)](https://nvd.nist.gov/vuln/search)
-
----
 
 ## **Tools Overview**
 
@@ -71,13 +62,9 @@ In the Module 7 Reading Material and lecture discussions, you explored how assur
 - Focuses on known vulnerabilities (CVEs).  
 - Pairs well with Syft in CI pipelines.
 
----
-
 ### **Report Deliverable**
 
 Throughout this lab, you will capture your commands, screenshots, and findings in a short report (2-3 pages total). This report will compile your SBOM generation results and vulnerability analysis (top 5 CVEs). The final report, along with the required output files, will be submitted in your Codespace’s deliverables/folder and pushed to GitHub.
-
----
 
 ## **Part 1: SBOM Generation (in Codespaces)**
 
@@ -98,8 +85,6 @@ All commands can be executed directly inside your GitHub Codespace using this re
 git clone https://github.com/tamu-edu/ng911-dev.git
 ```
 
----
-
 **git:**  
 This invokes the **Git** command-line tool — the version control system used to manage source code repositories.
 
@@ -112,8 +97,6 @@ It:
 
 **https://github.com/tamu-edu/ng911-dev.git:**  
 URL of the remote repository you want to clone.
-
----
 
 **Let’s break that URL down further:**
 
@@ -156,7 +139,6 @@ URL of the remote repository you want to clone.
    - How many components each tool reported (Syft vs. Trivy),
    - One difference you notice between the SPDX SBOM and the CycloneDX SBOM (format, fields, component count, etc.), and
    - Screenshots of your terminal output.
----
 
 ## **Part 2: SBOM Vulnerability Analysis**
 
@@ -180,8 +162,6 @@ URL of the remote repository you want to clone.
 
 4. **Copy the top 5 rows into your report table. Then select one CVE, locate it in the NVD Database, and summarize its cause or impact in one sentence.
 
----
-
 ## **Part 3: Deliverables**
 
 Submit a **2–3 page report** including:
@@ -202,8 +182,6 @@ deliverables/
 └── reflection.md
 ```
 **NOTE:** Be sure to include the URL of your public forked GitHub repository in your assignment submission in Canvas.
-
----
 
 ## **Grading Rubric (20 Points Total)**
 
