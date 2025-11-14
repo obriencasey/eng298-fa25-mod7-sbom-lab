@@ -165,7 +165,7 @@ This will download the NG911 source code into your Codespace environment so you 
    ```
 | **Syntax Breakdown** | **Description**
 |---------------|------------------------|
-| **head** | Linux command used to display the first part of a text file. By default, it shows the first 10 lines, but you can specify a different number using the -n or shorthand -<number> option
+| **head** | Linux command used to display the first part of a file
 | **-20** | Program sub-command (*sbom*) Program option used to specify the number of lines to display — in this case, the first 20 lines of the file
 | **../deliverables/vuln_analysis_grype.txt** | The path and filename of the file you want to preview
 
